@@ -1,0 +1,75 @@
+/*
+1. Selector por eqtiqueta: cambia el estilo a todas las etiquetas en cuestión, se coloca directamente el nombre de la eqtiqueta
+2. Selector por clase: cambia o modifica el estilo del elemento en donde se mencione la clase en el atributo class para crear un estilo por clase se coloca .nombreEstilo
+3. Selector por identificador, es decir, por el id, modifica el estilo del elemento que posea el id
+4. Selector Universal *    
+*/
+/*****************************************************************************/
+
+/*1. Por etiqueta*/
+
+/*2. Selector por clase o class
+*/
+.subtitulo{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    background-color: rgb(250, 171, 0);
+    border: 5px solid #000000;
+}
+/*
+3. Selector por ID: 
+*/
+#info{
+    border-radius: 20px;
+    background-color: rgb(218, 255, 8);
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    border: 5px solid #000000;
+}
+
+/*
+4.  Selector por atributo 
+*/
+[class]{
+    /* esto se aplicará a todos los elementos que tengan atributo class*/
+    background-color: rgb(255, 246, 142);
+}
+/*Combinadores */
+
+a[href]{
+    text-align: center;
+    margin-left: 2%;
+    color:rgb(180, 137, 240);
+}
+/*Utilizar sufijos*/
+a[href$=".com"]{
+    margin-left: 4%;
+    color:rgb(0, 21, 255)
+}
+/*Utilizando prefijos*/
+[class^="as"]{
+    font-size: 20px;
+}
+p ~ span { /*Punto 1*/
+    color:rgb(21, 0, 250)
+
+}
+p ~ ul {
+    background: #f6ff00; /*Punto 2*/ 
+}
+h1 {
+    text-align: center; /*Punto 3*/
+    color: rgb(0, 51, 110);
+  }
+  
+  h2 {
+    text-align: center;
+    color: rgb(17, 90, 0);
+  }
+  
+  p {
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  span { background-color: rgb(255, 255, 255); } /*Punto 4*/
+div span { background-color: rgb(17, 0, 255); }
